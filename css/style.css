@@ -129,7 +129,6 @@ nav ul li:first-child{
 .bottom-left ul{
     color: #5d5d5d;;
     list-style: none;
-    /* margin-left: 20px; */
     font-size: 1rem;
     line-height: 3rem;
     margin-left: 20px;
@@ -191,4 +190,54 @@ nav ul li:first-child{
     position: relative;
     top: 86px;
     left: 30px;
+}
+
+@media screen and (max-width:1042px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .logo img{
+        display: none;
+    }
+    
+    .main-right{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social{
+        flex-direction: row;
+        margin-right: 250px;
+        margin-top: 150px;
+        gap: 75px;
+    }
+
+    .ingredient-text{
+        margin-top: -75px;
+    }
+
+    .btn-wrapper{
+        margin-right: 7rem;
+        margin-top: 3rem;
+
+    }
+
+    .bottom{
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
 }
